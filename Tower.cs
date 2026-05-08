@@ -10,17 +10,14 @@ namespace CoffinGame
 
         public Tower(int x, int y)
         {
-            
             Bounds = new Rectangle(x, y, 80, 200);
-            Health = 100;
+            Health = 100; // tower hp
         }
 
         public void Draw(SpriteBatch sb, Texture2D pixel)
         {
-            
             sb.Draw(pixel, Bounds, Color.Black);
             
-           
             Rectangle healthBar = new Rectangle(Bounds.X, Bounds.Y - 20, (int)(Bounds.Width * (Health / 100f)), 10);
             sb.Draw(pixel, healthBar, Color.Red);
         }
