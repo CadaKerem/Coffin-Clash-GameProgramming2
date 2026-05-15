@@ -23,7 +23,7 @@ namespace CoffinGame
             else if (level == 2) { MaxHealth = 35; Damage = 10; Size = 60; MonsterColor = Color.DarkGreen; }
             else { MaxHealth = 55; Damage = 20; Size = 90; MonsterColor = Color.Purple; } 
 
-            Position = new Vector2(startPos.X, 550 - Size); 
+            Position = new Vector2(startPos.X, 850 - Size); 
             Health = MaxHealth;
         }
 
